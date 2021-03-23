@@ -68,6 +68,7 @@
                                     <outlet property="locationLabel" destination="1Cj-bw-Grh" id="BVk-NU-d1T"/>
                                     <outlet property="nameLabel" destination="fRj-Du-b57" id="oGB-XY-6Cu"/>
                                     <outlet property="typeLabel" destination="9fo-Xq-ERd" id="c3j-Dd-KTK"/>
+                                    <segue destination="vXQ-m7-9Lg" kind="show" identifier="showDetail" id="RP5-gg-qML"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,7 +77,7 @@
                             <outlet property="delegate" destination="Fzf-3K-VPs" id="VyM-dg-l3h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Places" id="HmX-gS-DZK">
+                    <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="HmX-gS-DZK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gvC-Kd-o03">
                             <connections>
                                 <segue destination="2S4-b4-z20" kind="presentation" modalTransitionStyle="crossDissolve" id="92a-aG-qeG"/>
@@ -93,7 +94,7 @@
             <objects>
                 <tableViewController id="vXQ-m7-9Lg" customClass="NewPlaceViewController" customModule="MyPlaces2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hB8-Sc-OeX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -233,7 +234,7 @@
                             <outlet property="delegate" destination="vXQ-m7-9Lg" id="HQN-eE-RVE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" id="gUy-v6-Ddg">
+                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="gUy-v6-Ddg">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xqQ-mV-fbn">
                             <connections>
                                 <action selector="cancelAction:" destination="vXQ-m7-9Lg" id="PFe-Qg-stf"/>
@@ -262,8 +263,8 @@
         <scene sceneID="7RM-AO-GoW">
             <objects>
                 <navigationController id="9GZ-zf-XhQ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ne6-Kc-p1k">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ne6-Kc-p1k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -293,9 +294,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GjV-2g-keR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644.9275362318842" y="-12.053571428571429"/>
+            <point key="canvasLocation" x="2555" y="-696"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RP5-gg-qML"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
         <systemColor name="opaqueSeparatorColor">
