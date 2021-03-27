@@ -256,7 +256,7 @@
                                                     </constraints>
                                                     <state key="normal" image="Placeholder"/>
                                                     <connections>
-                                                        <segue destination="NQV-jr-ZF1" kind="presentation" identifier="getAdress" id="ges-aD-j37"/>
+                                                        <segue destination="NQV-jr-ZF1" kind="presentation" identifier="getAddress" id="ges-aD-j37"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -434,7 +434,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="uU7-vA-cN6" id="sMM-jj-nyf"/>
+                        <outlet property="addressLabel" destination="uU7-vA-cN6" id="sMM-jj-nyf"/>
                         <outlet property="doneButton" destination="de0-YC-O3X" id="Mb8-Zy-zhP"/>
                         <outlet property="mapPinImage" destination="dRM-g9-JF2" id="79N-52-CLI"/>
                         <outlet property="mapView" destination="0hn-1f-Ayo" id="fSy-LR-Y2v"/>
